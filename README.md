@@ -1,6 +1,7 @@
 # TrackMania-agent
 Training a TrackMania agent using the `tmrl` library.
 
+![Test run](test_run.gif)
 
 # Introduction
 * It is absolutely necessary to understand the structure of `tmrl` before writing your own training agents/workers.
@@ -11,6 +12,8 @@ Training a TrackMania agent using the `tmrl` library.
     * `Worker` : Plays the game, collects episodes using the model defined for the actor, sends episodes to the `Server`.
     * `Trainer` : Receives episodes from the `Server`, trains on sampled episodes, sends weights back to the `Server` after every run.
     * `Server` : Collects episodes from the `Worker` and sends it to the `Trainer`. Also receives weights from the `Trainer` after each run and broadcasts them to all `Workers` so that they can update their models.
+
+A video of the trained agent driving on a test track can be found [here](https://wpi0-my.sharepoint.com/personal/kchin_wpi_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkchin%5Fwpi%5Fedu%2FDocuments%2FDS595%2DRL%20Project%204%2Ffinal%5Fdemo%2Eavi&parent=%2Fpersonal%2Fkchin%5Fwpi%5Fedu%2FDocuments%2FDS595%2DRL%20Project%204&ga=1).
 
 # Installation
 
